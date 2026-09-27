@@ -1,0 +1,52 @@
+{
+  "system_name": "Restaurant Intelligence System",
+  "last_updated": "2026-09-20 20:04:59",
+  "models": {
+    "rating_prediction": {
+      "file": "rating_model_bundle_v1.0.joblib",
+      "version": "v1.0",
+      "type": "regression",
+      "status": "production",
+      "metrics": {
+        "test_mae": 0.7732,
+        "test_rmse": 1.0628,
+        "test_r2": 0.5037
+      }
+    },
+    "cuisine_classification": {
+      "file": "cuisine_model_bundle_v1.0.joblib",
+      "version": "v1.0",
+      "type": "classification",
+      "status": "production",
+      "metrics": {
+        "accuracy": 0.4287,
+        "weighted_f1": 0.3856
+      }
+    },
+    "recommendation": {
+      "file": "recommendation_bundle_v1.0.joblib",
+      "version": "v1.0",
+      "type": "content_based_filtering",
+      "status": "production",
+      "metrics": null
+    },
+    "location_intelligence": {
+      "file": null,
+      "version": "v1.0",
+      "type": "descriptive_analytics",
+      "status": "production",
+      "metrics": null,
+      "note": "No saved model - runs aggregation on processed data directly"
+    }
+  },
+  "future_extension_points": [
+    "demand_prediction",
+    "revenue_prediction",
+    "sales_forecasting",
+    "customer_segmentation",
+    "customer_churn_prediction",
+    "sentiment_analysis",
+    "restaurant_success_prediction",
+    "price_optimization"
+  ]
+}

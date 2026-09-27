@@ -1,0 +1,47 @@
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+.venv/
+venv/
+
+# Notebooks & exploration
+notebooks/
+*.ipynb
+.ipynb_checkpoints/
+
+# Data (raw data not needed in container - only processed file used by inference)
+data/raw/
+data/external/
+
+# Unused model artifacts (see note above - saves ~486MB image size)
+models/recommendation_bundle_v1.0.joblib
+models/cosine_similarity.joblib
+models/rating_model_with_votes.joblib
+models/rating_model_realistic.joblib
+models/cuisine_classifier.joblib
+models/cuisine_label_encoder.joblib
+
+# Reports & docs (not needed at runtime)
+reports/
+tests/
+scripts/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+recommendation_log.txt
+requirements_full.txt

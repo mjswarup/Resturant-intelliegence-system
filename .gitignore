@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data & Models
+data/raw/
+data/processed/
+models/*.joblib
+models/*.pkl
+*.csv
+*.parquet
+
+# Environment & Secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & Reports
+logs/
+*.log
+recommendation_log.txt
+test_setup.py
